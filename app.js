@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
     if (dayOfWeek === 6 || dayOfWeek === 0) {
         res.send("<h1>🎉 Yay! It's a weekend! Get some rest!</h1>");
     } else {
-        res.send("<h1>😟 Boo! I have to work hard today.</h1>");
+        res.sendFile(__dirname+"/index.html");
     }
 });
 
